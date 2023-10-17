@@ -1,0 +1,139 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* global styling */
+.pri-bg-col {
+    background-color: #f2ddf2 !important;
+}
+
+.pri-text-col {
+    color: #8d2a8d !important;
+}
+
+.sec-bg-col {
+    background-color: #7d107d !important;
+}
+
+.sec-text-col {
+    color: #7d107d !important;
+}
+.sec-btn-col {
+    border-color:  #7d107d !important;
+}
+
+.quote-bg-col {
+    color:  #8d2a8d !important;;
+}
+
+/* end global styling */
+.bg {
+    background-image: linear-gradient(
+      to bottom, 
+      rgba(102, 103, 102, 0.468),
+      rgba(102, 103, 100, 0.468)
+    ),
+    url(../img/bg-hero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.z {
+    z-index: 100;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+    background-color: #7d107d;
+    border: none;
+}
+
+/* about styling */
+.about-content .card ul span {
+    font-size: 18px;
+    margin-left: 9px;
+}
+
+/* course styling*/
+.over {
+    transition: all ease-in-out 0.5s;
+}
+
+.card-eff:hover .text {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.text {
+    display: flex;
+    position: absolute;
+    background-color: #f2d3f2;
+    font-size: 15px;
+    transition: all ease-in-out 0.3s;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    transform: scale(0);
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.card-eff::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 50px;
+    height: 50px;
+    z-index: 50;
+}  
+
+.card-eff:hover::after {
+    opacity: 1;
+} 
+
+.card-eff::after {
+    content: '';
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    opacity: 0;    
+    z-index: 50;
+    transition: all ease-in-out 0.3s;
+} 
+
+.card-eff:hover::before {
+    opacity: 1;
+} 
+
+/* call to action styling */
+.cta-bg {
+    background-image: linear-gradient(
+      to bottom, 
+      rgba(20, 18, 18, 0.171),
+      rgba(10, 10, 10, 0.171)
+    ),
+    url(../img/cta-img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+} 
+
+/* swiper styling */
+.swiper {
+    width: 100%;
+    height: auto;
+}
+
+.swiper1 {
+    width: 100%;
+    height: auto;
+}
